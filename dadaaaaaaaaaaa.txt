@@ -1,0 +1,29 @@
+using System;
+public class RelayCommand:ICommand{
+	private action<object> _execute;
+	public RelayCommand(action<object> execute){
+		_execute = execute;
+	}
+	
+	public event EventHandler CanExecuteChanged;
+	private bool _isExecutable;
+
+	public bool IsExecutable{
+		get{
+			return _isExecutable;
+		}
+		set
+		{
+			_isExecutable = value;
+			CanExecuteChanged?.invoke(this,EventArgs.Empty);
+		}
+	}
+	
+	public bool CanExecute(object parameter){
+		return IsExecutable;
+	}
+	public void Execute(object parameter){
+		this._execute(parameter);
+	}
+}
+blabla
