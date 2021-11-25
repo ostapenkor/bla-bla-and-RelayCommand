@@ -26,6 +26,4 @@ public class RelayCommand:ICommand{
 		this._execute(parameter);
 	}
 }
-blabla
-
-console.WriteLine("bla bla");
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeEEEEEEEEEEEEE
